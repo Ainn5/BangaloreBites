@@ -62,7 +62,19 @@ const places=[
 {name:"The Only Place",area:"Museum Road",food:"Both",kind:"Steakhouse / continental",emoji:"🥩",desc:"Long-running casual dining with continental options.",query:"The Only Place Museum Road Bengaluru"},
 {name:"Bob's Bar",area:"Brigade Road / Indiranagar",food:"Pub",kind:"Bar / local favourites",emoji:"🥃",desc:"Casual pub atmosphere and familiar bar snacks.",query:"Bob's Bar Bengaluru"},
 {name:"Udupi Upahar",area:"JP Nagar",food:"Veg",kind:"South Indian",emoji:"🫓",desc:"Vegetarian South Indian breakfast and meals.",query:"Udupi Upahar JP Nagar Bengaluru"},
-{name:"Nandhana Palace",area:"Multiple areas",food:"Non-veg",kind:"Andhra cuisine",emoji:"🍗",desc:"Andhra-inspired dishes, biryani and spicy curries.",query:"Nandhana Palace Bengaluru"}
+{name:"Nandhana Palace",area:"Multiple areas",food:"Non-veg",kind:"Andhra cuisine",emoji:"🍗",desc:"Andhra-inspired dishes, biryani and spicy curries.",query:"Nandhana Palace Bengaluru"},
+{name:"The 13th Floor",area:"MG Road",food:"Pub",kind:"Rooftop restaurant & bar",emoji:"🌆",desc:"Rooftop dining with panoramic city views and Indian-Asian dishes.",query:"The 13th Floor rooftop restaurant MG Road Bengaluru"},
+{name:"SkyDeck by Sherlock's",area:"MG Road",food:"Pub",kind:"Rooftop pub & kitchen",emoji:"🍸",desc:"Open-air rooftop pub with city views, food and drinks.",query:"SkyDeck by Sherlock's MG Road Bengaluru"},
+{name:"Skyye",area:"UB City / Lavelle Road",food:"Pub",kind:"Rooftop lounge & bar",emoji:"🌃",desc:"Upscale rooftop lounge with skyline views and global food.",query:"Skyye UB City Bengaluru"},
+{name:"High Ultra Lounge",area:"Malleshwaram / World Trade Center",food:"Pub",kind:"Rooftop lounge & restaurant",emoji:"✨",desc:"High-floor rooftop dining and lounge with city views and Asian dishes.",query:"High Ultra Lounge World Trade Center Bengaluru"},
+{name:"Skygarden Best Rooftop Bar & Kitchen",area:"Whitefield / Mahadevapura",food:"Pub",kind:"Rooftop restaurant & bar",emoji:"🌿",desc:"Rooftop terrace with Indian, Asian and Italian dishes.",query:"Skygarden Best Rooftop Bar Kitchen HVP Aster Mahadevapura Bengaluru"},
+{name:"SkyLine Rooftop Bar & Kitchen 2.0",area:"Doddanekkundi",food:"Pub",kind:"Rooftop bar & kitchen",emoji:"🌇",desc:"Casual rooftop spot for food, cocktails and group meetups.",query:"SkyLine Rooftop Bar Kitchen 2.0 Doddanekkundi Bengaluru"},
+{name:"Oyster, Bar & Kitchen",area:"HSR Layout",food:"Pub",kind:"Rooftop bar & restaurant",emoji:"🍹",desc:"Rooftop dining and drinks with outdoor seating; check current details before visiting.",query:"Oyster Bar Kitchen HSR Layout Bengaluru"},
+{name:"To Be Continued Sky Lounge (TBC)",area:"HSR Layout",food:"Pub",kind:"Sky lounge & rooftop dining",emoji:"🌿",desc:"Lounge-style rooftop dining with cocktails and global fare.",query:"To Be Continued Sky Lounge TBC HSR Layout Bengaluru"},
+{name:"Brahma Brews",area:"JP Nagar",food:"Pub",kind:"Rooftop brewpub",emoji:"🍻",desc:"Brewpub with rooftop/outdoor seating and craft beer.",query:"Brahma Brews JP Nagar Bengaluru"},
+{name:"Terrace Bar & Kitchen",area:"JP Nagar",food:"Pub",kind:"Rooftop bar & kitchen",emoji:"🌆",desc:"Rooftop pub with outdoor seating and a casual food menu.",query:"Terrace Bar Kitchen JP Nagar Bengaluru"},
+{name:"Barrys Sky Lounge - Bar & Kitchen",area:"Kalyan Nagar",food:"Pub",kind:"Rooftop lounge & kitchen",emoji:"🍸",desc:"Rooftop lounge with outdoor seating and live-music listings.",query:"Barrys Sky Lounge Bar Kitchen Kalyan Nagar Bengaluru"},
+{name:"Candles Brewhouse",area:"Hebbal",food:"Pub",kind:"Rooftop brewpub & restaurant",emoji:"🌃",desc:"High-floor rooftop brewpub with skyline views and a multi-cuisine menu.",query:"Candles Brewhouse Hebbal Bengaluru"}
 ];
 const area=document.querySelector('#area'),food=document.querySelector('#food'),sort=document.querySelector('#sort'),search=document.querySelector('#search'),grid=document.querySelector('#places');
 const areas=[...new Set(places.map(p=>p.area))].sort();areas.forEach(a=>{let o=document.createElement('option');o.value=a;o.textContent=a;area.append(o)});
